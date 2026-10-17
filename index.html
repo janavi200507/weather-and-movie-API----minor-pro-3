@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather & Movie Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Weather & Movie Explorer</h1>
+        <p>Check the weather and discover your favourite movies.</p>
+
+        <nav>
+            <a href="#weather">Weather</a>
+            <a href="#movies">Movies</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="app-section" id="weather">
+            <h2>Weather App</h2>
+            <p>Find the current weather in any city.</p>
+
+            <form id="weather-form">
+                <input
+                    type="text"
+                    id="city-input"
+                    placeholder="Enter city name"
+                    aria-label="City name"
+                    required
+                >
+                <button type="submit">Search Weather</button>
+            </form>
+
+            <p id="weather-message" class="message" role="status"></p>
+            <div id="weather-result"></div>
+        </section>
+
+        <section class="app-section" id="movies">
+            <h2>Movie Search App</h2>
+            <p>Search for movies and explore their details.</p>
+
+            <form id="movie-form">
+                <input
+                    type="text"
+                    id="movie-input"
+                    placeholder="Enter movie title"
+                    aria-label="Movie title"
+                    required
+                >
+                <button type="submit">Search Movies</button>
+            </form>
+
+            <p id="movie-message" class="message" role="status"></p>
+            <div id="movie-result" class="movie-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Weather & Movie Explorer | Built with HTML, CSS and JavaScript</p>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
