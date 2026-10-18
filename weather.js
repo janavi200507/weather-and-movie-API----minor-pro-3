@@ -1,5 +1,5 @@
 
-const WEATHER_API_KEY = "704460777b112ef1269c262107e89f10";
+const WEATHER_API_KEY = "your_openweather_API_key_here";
 
 export async function getWeather(city) {
     if (!WEATHER_API_KEY) {
