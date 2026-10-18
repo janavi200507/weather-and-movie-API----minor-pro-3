@@ -1,5 +1,5 @@
 
-const MOVIE_API_KEY = "c01085af";
+const MOVIE_API_KEY = "your_movie_API_key_here";
 
 export async function searchMovies(title) {
     if (!MOVIE_API_KEY) {
